@@ -5,9 +5,9 @@ It explores latency-aware load balancing, message-passing, and dynamic node mana
 
 ## Overview
 Solvara routes inference requests intelligently across a cluster of compute nodes, adapting to:
-- Network latency and throughput
-- Node health and availability
-- Dynamic load conditions in real time
+- Network latency and throughput  
+- Node health and availability  
+- Dynamic load conditions in real time  
 
 This system demonstrates how distributed inference can be optimized to reduce end-to-end latency while maintaining reliability and scalability.
 
