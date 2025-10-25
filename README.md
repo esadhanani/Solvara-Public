@@ -5,9 +5,9 @@ It explores latency-aware load balancing, message-passing, and dynamic node mana
 
 ## Overview
 Solvara routes inference requests intelligently across a cluster of compute nodes, adapting to:
-- Network latency and throughput  
-- Node health and availability  
-- Dynamic load conditions in real time  
+- Network latency and throughput
+- Node health and availability
+- Dynamic load conditions in real time
 
 This system demonstrates how distributed inference can be optimized to reduce end-to-end latency while maintaining reliability and scalability.
 
@@ -30,14 +30,16 @@ The router continuously updates weights based on observed performance to optimiz
 ```bash
 python router.py --nodes 3 --batch_size 16
 curl -X POST http://localhost:8000/infer -d '{"prompt": "What is Solvara?"}'
+```
 
-Tech Stack
+
+## Tech Stack
 	•	Python 3.9+
 	•	FastAPI
 	•	NumPy / Pandas / Scikit-learn
 	•	Docker (optional for deployment)
 
-Purpose
+## Purpose
 
 This project represents ongoing work on distributed AI inference infrastructure,
 originally developed as part of internal experiments and early-stage demos for enterprise AI pilots (CloudHQ)
