@@ -1,0 +1,3905 @@
+{
+  "schema_version": 1,
+  "mode": "synthetic_offline",
+  "notes": [
+    "No model inference, GPU measurement, or real provider pricing.",
+    "Delay, cost, and quality values are hand-written fixtures.",
+    "Selection inputs are deterministic; measured wall times vary by host load.",
+    "Request wall time includes all candidate waits, timeouts, retries, and selection.",
+    "Observed cost includes successful outputs only, not failed or cancelled remote work."
+  ],
+  "environment": {
+    "python": "3.9.9",
+    "system": "Darwin"
+  },
+  "summary": {
+    "requests": 45,
+    "route_failures": 0,
+    "provider_failures": 30,
+    "selected_providers": {
+      "fast": 5,
+      "economy": 25,
+      "quality": 15
+    },
+    "request_wall_ms": {
+      "p50": 26.48208299999999,
+      "p95": 61.87612500000017
+    },
+    "selected_provider_wall_ms": {
+      "p50": 13.260750000000154,
+      "p95": 26.326874999999973
+    }
+  },
+  "requests": [
+    {
+      "scenario": "healthy",
+      "goal": "latency",
+      "iteration": 0,
+      "status": "success",
+      "selected": {
+        "provider": "fast",
+        "result": {
+          "text": "Synthetic fixture from fast; input fingerprint c132ee3400c3798a",
+          "estimated_cost": 0.004,
+          "quality_score": 0.65,
+          "simulated": true,
+          "backend_duration_ms": 2.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 2.493749999999989,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 2.4978749999999965,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.493749999999989,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.4978749999999965,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.194499999999998,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.197749999999994,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.784540999999994,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.788458,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.028333,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "latency",
+      "iteration": 1,
+      "status": "success",
+      "selected": {
+        "provider": "fast",
+        "result": {
+          "text": "Synthetic fixture from fast; input fingerprint 927ba658a503ebaa",
+          "estimated_cost": 0.004,
+          "quality_score": 0.65,
+          "simulated": true,
+          "backend_duration_ms": 2.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 2.477959000000002,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 2.4819580000000063,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.477959000000002,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.4819580000000063,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.55266599999999,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.555874999999993,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.33149999999999,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.334666000000006,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 25.551167,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "latency",
+      "iteration": 2,
+      "status": "success",
+      "selected": {
+        "provider": "fast",
+        "result": {
+          "text": "Synthetic fixture from fast; input fingerprint 7ad35c0b4ee7950e",
+          "estimated_cost": 0.004,
+          "quality_score": 0.65,
+          "simulated": true,
+          "backend_duration_ms": 2.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 2.479124999999999,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 2.4827919999999977,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.479124999999999,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.4827919999999977,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.654083999999996,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.659500000000005,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.224999999999998,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.228292000000014,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.486333000000002,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "latency",
+      "iteration": 3,
+      "status": "success",
+      "selected": {
+        "provider": "fast",
+        "result": {
+          "text": "Synthetic fixture from fast; input fingerprint 45a9f4b286fb1e47",
+          "estimated_cost": 0.004,
+          "quality_score": 0.65,
+          "simulated": true,
+          "backend_duration_ms": 2.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 2.6892909999999826,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 2.695541999999995,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.6892909999999826,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.695541999999995,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.246124999999997,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.250250000000019,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.216084000000002,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.21912500000001,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.48208299999999,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "latency",
+      "iteration": 4,
+      "status": "success",
+      "selected": {
+        "provider": "fast",
+        "result": {
+          "text": "Synthetic fixture from fast; input fingerprint 25d86dac643800eb",
+          "estimated_cost": 0.004,
+          "quality_score": 0.65,
+          "simulated": true,
+          "backend_duration_ms": 2.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 2.4575410000000075,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 2.461625000000023,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.4575410000000075,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.461625000000023,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.270874999999988,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.274750000000001,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.301416999999994,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.306042,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.624499999999994,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "cost",
+      "iteration": 0,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.277499999999998,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.281041999999992,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.4843330000000052,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.487750000000011,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.277499999999998,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.281041999999992,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.233707999999993,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.236625000000014,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.479834000000007,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "cost",
+      "iteration": 1,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.171792000000016,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.174832999999996,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.442999999999973,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.446792000000003,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.171792000000016,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.174832999999996,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.175541999999997,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.17845799999999,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.33487499999998,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "cost",
+      "iteration": 2,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 12.552041000000013,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 12.554917,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.356958999999992,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.3593339999999907,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.552041000000013,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.554917,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.48483300000004,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.487833999999985,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 25.647874999999985,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "cost",
+      "iteration": 3,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.234332999999987,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.237249999999978,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.392708000000021,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.3950839999999918,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.234332999999987,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.237249999999978,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.21237500000001,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.216249999999995,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.406166999999982,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "cost",
+      "iteration": 4,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.385291999999993,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.389541999999977,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.4863750000000406,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.4899580000000143,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.385291999999993,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.389541999999977,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.595666000000016,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.59841700000004,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 25.75299999999997,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "quality",
+      "iteration": 0,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 26.282958999999995,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 26.28799999999998,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.3331669999999693,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.336249999999984,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.938125000000023,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.942166000000032,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.282958999999995,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.28799999999998,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.628832999999965,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "quality",
+      "iteration": 1,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 25.536999999999978,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 25.540082999999992,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.490708000000008,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.4939160000000404,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.406666999999983,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.411124999999968,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.536999999999978,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.540082999999992,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 25.72058300000002,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "quality",
+      "iteration": 2,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 26.180458000000016,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 26.18337500000001,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.401750000000036,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.4044590000000254,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.11512499999995,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.11775000000004,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.180458000000016,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.18337500000001,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.342750000000027,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "quality",
+      "iteration": 3,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 26.246207999999992,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 26.24949999999998,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.5347079999999966,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.5389170000000294,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.186540999999997,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.189457999999988,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.246207999999992,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.24949999999998,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.474250000000033,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "healthy",
+      "goal": "quality",
+      "iteration": 4,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 26.332332999999984,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 26.336625,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": {
+            "text": "Synthetic fixture from fast; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.004,
+            "quality_score": 0.65,
+            "simulated": true,
+            "backend_duration_ms": 2.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.439125000000042,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 2.442541999999992,
+          "status": "success"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.619708999999979,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.62308299999998,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.332332999999984,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.336625,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.569709000000053,
+      "observed_success_cost": 0.017
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "latency",
+      "iteration": 0,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 12.414957999999976,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 12.418333000000004,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.3816660000000045,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.3862910000000404,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.414957999999976,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.418333000000004,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.196249999999978,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.199000000000026,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.35633300000001,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "latency",
+      "iteration": 1,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 12.537708999999953,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 12.541040999999975,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.3956250000000123,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.400832999999991,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.537708999999953,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.541040999999975,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.211208000000042,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.214291999999972,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.366667000000067,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "latency",
+      "iteration": 2,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 12.852041000000035,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 12.875040999999921,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.5498749999999237,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.5579159999999934,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.852041000000035,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.875040999999921,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.01233299999994,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.015291999999967,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.296167000000036,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "latency",
+      "iteration": 3,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.193791000000065,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.197000000000013,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.290832999999992,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.2965000000000346,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.193791000000065,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.197000000000013,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.23249999999999,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.235374999999948,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.423332999999992,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "latency",
+      "iteration": 4,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 12.688000000000033,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 12.691917000000053,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.444208999999975,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.449999999999952,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.688000000000033,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.691917000000053,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.661999999999964,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.668667000000035,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.008249999999954,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "cost",
+      "iteration": 0,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.274082999999992,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.278208999999986,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.4307920000000705,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.4382079999999418,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.274082999999992,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.278208999999986,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.78162500000003,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.784666000000065,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.013708000000022,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "cost",
+      "iteration": 1,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.192124999999999,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.195333000000087,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.413333999999989,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.4192079999999505,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.192124999999999,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.195333000000087,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.198000000000054,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.200915999999964,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.410374999999988,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "cost",
+      "iteration": 2,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.443125,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.449041999999967,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.368958000000032,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.3732090000000428,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.443125,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.449041999999967,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.218957999999958,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.221957999999933,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.40512499999992,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "cost",
+      "iteration": 3,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 12.932958000000049,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 12.937540999999996,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.3955420000000283,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.401333999999977,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.932958000000049,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.937540999999996,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.235165999999975,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.238375000000033,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 25.413459000000028,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "cost",
+      "iteration": 4,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.261625000000056,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.265166999999911,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.1838749999999463,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.1887499999999616,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.261625000000056,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.265166999999911,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.867541999999965,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.870500000000018,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.03058300000005,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "quality",
+      "iteration": 0,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 26.397416000000007,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 26.402291999999996,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.411750000000046,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.416791000000029,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.215874999999988,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.218500000000022,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.397416000000007,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.402291999999996,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.681708000000025,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "quality",
+      "iteration": 1,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 26.248332999999956,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 26.25133299999993,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.4294999999999733,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.435500000000035,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.668542000000006,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.671832999999966,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.248332999999956,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.25133299999993,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.540084000000075,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "quality",
+      "iteration": 2,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 26.176208000000088,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 26.17933299999997,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.3566660000000628,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.361124999999964,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.065042000000027,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.06833399999996,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.176208000000088,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.17933299999997,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.35954099999993,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "quality",
+      "iteration": 3,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 26.322500000000026,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 26.326874999999973,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.391708999999964,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.396874999999965,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.278624999999987,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.283207999999934,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.322500000000026,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.326874999999973,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 26.51250000000005,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_error",
+      "goal": "quality",
+      "iteration": 4,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 25.509208999999977,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 25.51216700000003,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 2.3909589999999703,
+              "status": "error",
+              "error_type": "ConnectionError"
+            }
+          ],
+          "wall_ms": 2.39524999999996,
+          "status": "error"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.843583999999964,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.846709000000068,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.509208999999977,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.51216700000003,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 25.67816700000003,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "latency",
+      "iteration": 0,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.205374999999965,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.208250000000032,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 61.333916000000045,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 61.35316699999993,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.205374999999965,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.208250000000032,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.17779099999995,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.180791000000035,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 61.58491700000002,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "latency",
+      "iteration": 1,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.344666999999921,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.350415999999976,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 61.22695800000011,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 61.237541999999976,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.344666999999921,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.350415999999976,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.21029100000005,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.214041999999992,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 61.48837499999993,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "latency",
+      "iteration": 2,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 12.885291999999993,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 12.893374999999985,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 60.65075000000009,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 60.66433299999996,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.885291999999993,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.893374999999985,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.31708399999999,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.320708999999944,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 60.833167000000074,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "latency",
+      "iteration": 3,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.203833999999803,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.208541999999879,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 60.45504200000007,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 60.468458999999974,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.203833999999803,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.208541999999879,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.38320800000016,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.394250000000063,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 60.76045899999993,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "latency",
+      "iteration": 4,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.054042000000043,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.057625000000073,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 61.532291000000015,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 61.591500000000025,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.054042000000043,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.057625000000073,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.25012500000001,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.253250000000115,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 61.87929199999998,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "cost",
+      "iteration": 0,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.010541000000098,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.015624999999975,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 60.88470899999998,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 60.89649999999991,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.010541000000098,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.015624999999975,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.963583000000014,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.969542000000125,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 61.15224999999991,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "cost",
+      "iteration": 1,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 12.967249999999986,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 12.97208400000005,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 62.189124999999954,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 62.203084000000075,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.967249999999986,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.97208400000005,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.38345799999986,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.387166000000015,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 62.68733299999995,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "cost",
+      "iteration": 2,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.723999999999847,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.729083000000086,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 61.18716599999985,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 61.19920800000011,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.723999999999847,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.729083000000086,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.23875000000009,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.24204100000016,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 61.60841600000011,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "cost",
+      "iteration": 3,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.248332999999946,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.25233300000006,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 61.23341699999996,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 61.244915999999925,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.248332999999946,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.25233300000006,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.789457999999875,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.794874999999998,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 61.4127499999999,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "cost",
+      "iteration": 4,
+      "status": "success",
+      "selected": {
+        "provider": "economy",
+        "result": {
+          "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+          "estimated_cost": 0.001,
+          "quality_score": 0.7,
+          "simulated": true,
+          "backend_duration_ms": 12.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 13.256916000000007,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 13.260750000000154,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 61.450709000000046,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 61.46783300000003,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.256916000000007,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.260750000000154,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.38545900000011,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.390459000000142,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 61.67283400000012,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "quality",
+      "iteration": 0,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 26.188458000000026,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 26.191500000000147,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 61.3873749999998,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 61.423832999999874,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.116458000000053,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.120707999999981,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint c132ee3400c3798a",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.188458000000026,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.191500000000147,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 61.75320800000006,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "quality",
+      "iteration": 1,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 26.1944999999999,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 26.197666000000062,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 60.52370800000006,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 60.535958,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.226957999999955,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.230000000000075,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 927ba658a503ebaa",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.1944999999999,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.197666000000062,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 60.71854099999996,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "quality",
+      "iteration": 2,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 25.38862499999994,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 25.392249999999894,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 61.13762499999997,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 61.149750000000004,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.205708000000094,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.20941600000003,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 7ad35c0b4ee7950e",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.38862499999994,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.392249999999894,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 61.337916999999905,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "quality",
+      "iteration": 3,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 25.321833000000016,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 25.326124999999866,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 61.15133299999997,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 61.16341600000008,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 12.610833000000099,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 12.614208999999876,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 45a9f4b286fb1e47",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 25.321833000000016,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 25.326124999999866,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 61.31470800000005,
+      "observed_success_cost": 0.013000000000000001
+    },
+    {
+      "scenario": "fast_provider_timeout",
+      "goal": "quality",
+      "iteration": 4,
+      "status": "success",
+      "selected": {
+        "provider": "quality",
+        "result": {
+          "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+          "estimated_cost": 0.012,
+          "quality_score": 0.95,
+          "simulated": true,
+          "backend_duration_ms": 25.0
+        },
+        "attempts": [
+          {
+            "number": 1,
+            "wall_ms": 26.249583000000023,
+            "status": "success",
+            "error_type": null
+          }
+        ],
+        "wall_ms": 26.25245799999987,
+        "status": "success"
+      },
+      "candidates": [
+        {
+          "provider": "fast",
+          "result": null,
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 61.536542000000026,
+              "status": "attempt_timeout",
+              "error_type": "TimeoutError"
+            }
+          ],
+          "wall_ms": 61.58754200000005,
+          "status": "attempt_timeout"
+        },
+        {
+          "provider": "economy",
+          "result": {
+            "text": "Synthetic fixture from economy; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.001,
+            "quality_score": 0.7,
+            "simulated": true,
+            "backend_duration_ms": 12.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 13.187749999999943,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 13.190542000000027,
+          "status": "success"
+        },
+        {
+          "provider": "quality",
+          "result": {
+            "text": "Synthetic fixture from quality; input fingerprint 25d86dac643800eb",
+            "estimated_cost": 0.012,
+            "quality_score": 0.95,
+            "simulated": true,
+            "backend_duration_ms": 25.0
+          },
+          "attempts": [
+            {
+              "number": 1,
+              "wall_ms": 26.249583000000023,
+              "status": "success",
+              "error_type": null
+            }
+          ],
+          "wall_ms": 26.25245799999987,
+          "status": "success"
+        }
+      ],
+      "request_wall_ms": 61.87612500000017,
+      "observed_success_cost": 0.013000000000000001
+    }
+  ]
+}
